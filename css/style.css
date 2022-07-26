@@ -25,10 +25,21 @@ button {
     padding: 10px 30px;
     border-radius: 5px;
     border-style: none;
+    flex: 0 1 auto;
+    align-self: flex-start;
 }
 
 h1 {
     font-size: 50px;
+    align-self: center;
+    margin-bottom: 60px;
+}
+
+.content {
+    padding: 60px 200px;
+    gap: 30px;
+    padding-bottom: 60px;
+    display: flex;
 }
 
 /*Header*/
@@ -57,46 +68,43 @@ header {
 
 /*Introduction*/
 
-.introduction {
+.introduction,
+.playstyle
+{
     background-color: #1F2937;
     color: white;
     display: flex;
     padding: 30px 200px;
     justify-content: space-between;
     flex-flow: row nowrap;
+    padding-bottom: 60px;
 }
 
 .introduction-paragraph {
     display: flex;
     flex-flow: column nowrap;
     flex: 0 1 auto;
-    width: 700px;
+    width: 600px;
     gap: 20px;
 }
 
 .introduction img {
-    height: 400px;
+    height: 450px;
+    border-radius: 40px;
 }
 
 .introduction-paragraph h1 {
     margin: 0;
 }
 
-.introduction-paragraph button {
-    flex: 0 1 auto;
-    align-self: flex-start;
-}
 
 /*Skills*/
 .skills {
-    display: flex;
     flex-flow: column nowrap;
     align-items: center;
     background-color: white;
-    padding: 20px 200px;
     color: white;
     background-color: black;
-    gap: 50px;
 }
 
 .skills p {
@@ -104,14 +112,17 @@ header {
 }
 
 .skills ul {
+    padding: 0px;
+    margin: 0px;
+    align-self: stretch;
     display: flex;
     flex-flow: row wrap;
-    gap: 120px;
+    justify-content: space-between;
     list-style: none;
 }
 
 .skills li {
-    width: 150px;
+    width: 180px;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -134,8 +145,98 @@ header {
 
 .note {
     width: 800px;
+    color: rgb(208, 168, 92);
 }
 
+/*items*/
+.items {
+    background-color: #E5E7EB;
+    flex-flow: column nowrap;
+}
 
+.item-info {
+    border: 10px solid rgb(208, 168, 92);
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    background-color: grey;
+    min-width: 500px;
+}
 
+.item-info img {
+    height: 150px;
+    border-radius:20px;
+}
 
+.item-info .info {
+    flex: 1 1 auto;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.item-info .info .name {
+    color: #c9aa71;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.items p {
+    text-align: center;
+    margin: 0px;
+}
+
+.items.content p:nth-of-type(1) {
+    margin-top: -20px;
+}
+
+.item-info.reverse {
+    flex-direction: row-reverse;
+}
+
+/*playstyle*/
+.playstyle {
+    flex-flow: column nowrap;
+}
+
+.trick {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.trick img {
+    border-radius: 20px;
+    width: 400px;
+    border: 3px solid grey;
+}
+
+.trick .para {
+    background-color: black;
+    padding: 10px 30px 30px 30px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 400px;
+    border-radius: 20px;
+    border: 3px solid grey;
+    gap: 20px;
+}
+
+.trick .para h1 {
+    margin-bottom: 10px;
+    text-align: left;
+    align-self: flex-start;
+}
+
+/*match-ups*/
+.match-up {
+    flex-flow: column nowrap;
+    background-color: rgb(49, 49, 60);
+    color: white;
+}
