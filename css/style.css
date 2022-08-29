@@ -81,6 +81,19 @@ header a:hover {
 
 /*Introduction*/
 
+#deprecated-notice {
+    background-color: #1F2937;
+    color: orange;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#deprecated-notice a {
+    color: orange;
+    text-decoration: underline;
+}
+
 .introduction,
 .playstyle
 {
